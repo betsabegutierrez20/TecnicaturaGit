@@ -1,2 +1,3 @@
 nuevo documento y modificacion al archivo readme.txt
-agrego notas nuevasde la clase 4
+agrego notas nuevas de la clase 4
+git checkout y git branch
