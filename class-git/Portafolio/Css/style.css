@@ -1,8 +1,25 @@
+/*Definiendo variables de color en css, variable global*/
+:root{
+    --text-color: white;
+    --colorh1-color: rgb(215,211,211);
+}
+/*Aplicando variable creada en el root al body de mi web */
+/*Reemplazo el bosy con el uso de variables css*/
+body {
+    background: rgb(43, 43,70);
+    color: var(--text-color);
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+h1, h2 {
+    color: var(--colorh1-color);
+} 
+/*
 body{
     background: rgb(43, 70, 70);
     color: white;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /*fuente del cuerpo*/
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+*/
 /*Titulo del header*/
 .titulo{
     display: flex;
@@ -24,7 +41,7 @@ body{
     text-align: center;
     padding: 0.5rem;
     border-radius: 0.5rem;
-    background: #f0eaea1a;
+    background: #f0aeae1a;
     box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.5)
 }
 /*estilo de los enlaces de la barra de navegacion*/
@@ -44,7 +61,28 @@ a {
     line-height: 2.5rem; /*espaciado entre los aprrafos del texto*/
     font-size: large; /*tamaño de la fuente*/
     color: azure; /*fuente adaptado a pantallas grandes pc*/
+    gap:5rem;
+    align-items: center;
 }
+.img-perfil {
+    border-radius:50% ;
+}
+.experiencia, .estudios {
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+    color: azure;
+}
+.conteiner-experiencia, .conteiner-estudios{
+    width: 100%;
+    padding: 2rem;
+    margin-top: 5rem;
+    line-height: 2.5rem;
+    font-size:larger;
+    margin: 8rem;
+}
+
+/*media Queries agrupadas*/
 /*Celular (Pantallas peqieñas, hasta 767px)*/
 @media (max-width: 767px) {
     .titulo{
@@ -58,13 +96,35 @@ a {
     .container-sobremi{
         width: 100%;
         padding: 1;
+        margin-top: 1rem;/* margen de alto*/
+        line-height:2.5rem;/*espaciado entre los parrafos del texto*/
+        font-size: small; /*tamaño de la fuente*/
+        flex-direction: column;
+    }
+    /*Agregando el responsivo de los secciones eperiencia y estudios */
+    .experiencia, .estudios{
+        width: 100%;
+        padding: 1rem;
         margin-top: 1rem;
-        line-height:2.5rem;
-        font-size: small;
+        font-size:small;
     }
 }
-/*EScritorios (Pantallas anchas , 1024px y superiores)*/
-@media (main-width: 1024px) {
+/*Tableta (pantalla medianas, entre 768px y 1023px)*/
+@media (min-width:768px ) and (max-width: 1023px){
+    .titulo{
+        justify-content: center;
+    }
+    .navigation{
+        gap: 2rem;
+        justify-content: center;
+    }
+    /*Agregando el responsivo de alas secciones, esperiencias y estudios*/
+    .experiencia, .estudios{
+        width: 75%;
+    }
+}
+/*Escritorios (Pantallas anchas, 1024px y superiores)*/
+@media (main-width: 1024px){
     .titulo{
         justify-content: flex-start;
     }
@@ -72,5 +132,9 @@ a {
         gap: 3rem;
         justify-content: flex-end;
         margin: 0 3rem;
+    }
+    /*Agregando el reponsivo de las secciones, esperiencias y estudios*/
+    .experiencia, .estudios{
+        width: 75%;  
     }
 }
