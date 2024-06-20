@@ -1,0 +1,45 @@
+.experiencia{
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+    color: azure;
+}
+.conteiner-experiencia{
+    width: 100%;
+    padding: 2rem;
+    margin-top: 5rem;
+    line-height: 2.5rem;
+    font-size:larger;
+    margin: 8rem;
+}
+
+/*Celular (Pantallas pequeñas, hasta 767px)*/
+@media (max-width: 767px) {
+    /*Agregando el responsivo de los secciones experiencia */
+    .conteiner-experiencia{
+        width: 100%;
+        margin: 0rem;
+    }
+    .experiencia{
+        width: 100%;
+        padding: 1rem;
+        margin-top: 1rem;
+        font-size:small;
+    }
+}
+
+/*Tableta (pantalla medianas, entre 768px y 1023px)*/
+@media (min-width:768px ) and (max-width: 1023px){
+    /*Agregando el responsivo de alas seccion de experiencias */
+    .experiencia{
+        width: 75%;
+    }
+}
+
+/*Escritorios (Pantallas anchas, 1024px y superiores)*/
+@media (min-width: 1024px){
+    /*Agregando el reponsivo de las secciones, esperiencias y estudios*/
+    .experiencia{
+        width: 75%;  
+    }
+}
