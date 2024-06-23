@@ -1,99 +1,124 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <!--Especifica el idioma del contenido del documento-->
-    <meta http-equiv="content-languege" content="es">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+    <meta http-equiv="content-languege" content="es" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <!--Agregamos dos etiquetas meta para el SEO de la vlase anterior mas otra atiqueta meta la del autor.-->
-    <meta name="description" content="Betsabé Dianan Gutierrez Santos, creado por Betsabé especializada en [Programación]">
-    <meta name="keywords" content="portafolio, dearrollador web, [programador], proyectos; contacto">
-    <meta name="author" content="Betsabé Daiana Gutierrez Santos">
+    <meta
+      name="description"
+      content="Betsabé Dianan Gutierrez Santos, creado por Betsabé especializada en [Programación]"
+    />
+    <meta
+      name="keywords"
+      content="portafolio, dearrollador web, [programador], proyectos; contacto"
+    />
+    <meta name="author" content="Betsabé Daiana Gutierrez Santos" />
     <title>Mi Portafolio web</title>
     <!-- link o referencia a un archivo Css-->
-    <link rel= "stylesheet" href="./Css/style.css" >
-    <link rel="stylesheet" href="./Css/sobremi.css">
-    <link rel="stylesheet" href="./Css/experiencias.css">
-    <link rel="stylesheet" href="./Css/estudios.css">
-    <link rel="stylesheet" href="./Css/proyectos.css" >
-</head>
-<body>
+    <link rel="stylesheet" href="./Css/style.css" />
+    <link rel="stylesheet" href="./Css/sobremi.css" />
+    <link rel="stylesheet" href="./Css/experiencias.css" />
+    <link rel="stylesheet" href="./Css/estudios.css" />
+    <link rel="stylesheet" href="./Css/proyectos.css" />
+  </head>
+  <body>
     <header>
-        <h1 class="titulo">Betsabé Daiana Gutierrez Santos</h1>
-        <nav>
-            <!--Agregue enlaces para mi portafolio web-->
-            <ul class="navigation">
-                <li><a href="#sobremi">Sobre Mi</a></li>
-                <li><a href="#experiencia">Experiencia</a> </li>
-                <li><a href="#esudios">Mis Estudios</a></li>
-                <li><a href="#proyectos">Proyectos</a></li>
-                <li><a href="#contacto">Contactame</a><li>  
-            </ul>
-         </nav>
+      <h1 class="titulo">Betsabé Daiana Gutierrez Santos</h1>
+      <nav>
+        <!--Agregue enlaces para mi portafolio web-->
+        <ul class="navigation">
+          <li><a href="#sobremi">Sobre Mi</a></li>
+          <li><a href="#experiencia">Experiencia</a></li>
+          <li><a href="#esudios">Mis Estudios</a></li>
+          <li><a href="#proyectos">Proyectos</a></li>
+          <li><a href="#contacto">Contactame</a></li>
+          <li></li>
+        </ul>
+      </nav>
     </header>
     <main class="main-container">
-        <section class="sobremi">
-            <article class="container-sobremi">
-                <img class="img-perfil" src="./Assets/perfilBG.jpg" alt="fotografia de Betsabé Gutierrez"width="200" height="200">
-                <h2>
-                    Soy <b> Técnica Universitaria en Programación</b>, estudiante de la Universidad Tecnologíca Nacional (UTN) - FRSR. Argentina.
-                    Me capacito en la creación, programación e investigación de códigos de las tecnologías actuales.
-                </h2>
-            </article>
-        </section>
-        <!--Clase 3 Agregamos 2 seccions mas Experiencias y Estudios-->
-        <section id="experiencia" class="experiencia">
-            <article class="container-experiencia">
-                <h2>Experiencia Laboral: </h2>
-                <p>-----sin experiencia laboral en este momento</p>
-            </article>
-        </section>
-        <section id="estudios" class="estudios">
-            <article class="container-estudios">
-                <h2>Mis Estudios</h2>
-                <h6>Descripción de mis estudios: </h6>
-                <p>Primario 2010 - 2017 : Maestro José Dionisio Fernandez 1-123.</p>
-                <p>Secundario 2018 - 2022 : Manuel Ignacio Molina 4-087.
-                    Egresada con Bachillerato en Ciencias Naturales y Salud</p>
-                <h3>Nivel Superior 2024 - 2025 : Técnico Universitario en Programación- UTN facultad regional San Rafael </h3>
-                <div class="container-estudios-seccion">
-                    <img scr="./Assets/utn.jpg" width="100" height="100" alt="Logotipo de la universidad UTN">
-                    <p>Primer año 2024 de cursado de la carrera en programción donde podemos ver el analisis de problemas 
-                        de datos, desarrollo de programas en lenguajes como Python, JavaScript, Java y Git-Bash, y el 
-                        analisis de sistemas de computación.</p>
-                </div>
-            </article>
-        </section>
-        <section id= "proyectos" class="proyectos">
-            <h2>Proyectos</h2>
-            <div class="galeria-proyectos">
-                <div class="proyecto">
-                    <img src="./Assets/ahorcado.jpg" alt="Foto del proyecto 1">
-                    <h3>Proyecto 1: Ahorcado en Pseint</h3>
-                    <p>
-                        Es un juego donde un jugador introduce una palabra secreta,
-                         y otro jugador intenta adivinarla letra por letra.
-                        Si se equivoca, aparecerá el dibujo del ahorcado. 
-                    </p>
-                    <a href="#">Ver más</a>
-                    <a href="#">GitHub</a>
-                    <a href="#">Tecnologia</a>
-                </div>
-                <div class="proyecto">
-                    <img src="" alt="Foto del proyecto 2">
-                    <h3>Proyecto 2</h3>
-                    <p>
-                        Descripción breve del proyecto
-                    </p>
-                    <a href="#">Ver más</a>
-                    <a href="#">GitHub</a>
-                    <a href="#">Tecnologia</a>
-                </div>
-                <!--Aqui se puede agregar mas proyectos-->
-            </div>
-        </section>
+      <section class="sobremi">
+        <article class="container-sobremi">
+          <img
+            class="img-perfil"
+            src="./Assets/perfilBG.jpg"
+            alt="fotografia de Betsabé Gutierrez"
+            width="200"
+            height="200"
+          />
+          <h2>
+            Soy <b> Técnica Universitaria en Programación</b>, estudiante de la
+            Universidad Tecnologíca Nacional (UTN) - FRSR. Argentina. Me
+            capacito en la creación, programación e investigación de códigos de
+            las tecnologías actuales.
+          </h2>
+        </article>
+      </section>
+      <!--Clase 3 Agregamos 2 seccions mas Experiencias y Estudios-->
+      <section id="experiencia" class="experiencia">
+        <article class="container-experiencia">
+          <h2>Experiencia Laboral:</h2>
+          <p>-----sin experiencia laboral en este momento</p>
+        </article>
+      </section>
+      <section id="estudios" class="estudios">
+        <article class="container-estudios">
+          <h2>Mis Estudios</h2>
+          <h6>Descripción de mis estudios:</h6>
+          <p>Primario 2010 - 2017 : Maestro José Dionisio Fernandez 1-123.</p>
+          <p>
+            Secundario 2018 - 2022 : Manuel Ignacio Molina 4-087. Egresada con
+            Bachillerato en Ciencias Naturales y Salud
+          </p>
+          <h3>
+            Nivel Superior 2024 - 2025 : Técnico Universitario en Programación-
+            UTN facultad regional San Rafael
+          </h3>
+          <div class="container-estudios-seccion">
+            <img
+              src="./Assets/utn.jpg"
+              width="100"
+              height="100"
+              alt="Logotipo de la universidad UTN"
+            />
+            <p>
+              Primer año 2024 de cursado de la carrera en programción donde
+              podemos ver el analisis de problemas de datos, desarrollo de
+              programas en lenguajes como Python, JavaScript, Java y Git-Bash, y
+              el analisis de sistemas de computación.
+            </p>
+          </div>
+        </article>
+      </section>
+      <section id="proyectos" class="proyectos">
+        <h2>Proyectos</h2>
+        <div class="galeria-proyectos">
+          <div class="proyecto">
+            <img src="./Assets/ahorcado.jpg" alt="Foto del proyecto 1" />
+            <h3>Proyecto 1: Ahorcado en Pseint</h3>
+            <p>
+              Es un juego donde un jugador introduce una palabra secreta, y otro
+              jugador intenta adivinarla letra por letra. Si se equivoca,
+              aparecerá el dibujo del ahorcado.
+            </p>
+            <a href="#">Ver más</a>
+            <a href="#">GitHub</a>
+            <a href="#">Tecnologia</a>
+          </div>
+          <div class="proyecto">
+            <img src="" alt="Foto del proyecto 2" />
+            <h3>Proyecto 2</h3>
+            <p>Descripción breve del proyecto</p>
+            <a href="#">Ver más</a>
+            <a href="#">GitHub</a>
+            <a href="#">Tecnologia</a>
+          </div>
+          <!--Aqui se puede agregar mas proyectos-->
+        </div>
+      </section>
     </main>
-</body>
-
+  </body>
 </html>
