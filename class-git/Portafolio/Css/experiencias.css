@@ -4,7 +4,7 @@
     padding: 2rem;
     color: azure;
 }
-.conteiner-experiencia{
+.container-experiencia{
     width: 100%;
     padding: 2rem;
     margin-top: 5rem;
@@ -16,7 +16,7 @@
 /*Celular (Pantallas pequeñas, hasta 767px)*/
 @media (max-width: 767px) {
     /*Agregando el responsivo de los secciones experiencia */
-    .conteiner-experiencia{
+    .container-experiencia{
         width: 100%;
         margin: 0rem;
     }
