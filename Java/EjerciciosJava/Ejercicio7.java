@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class Ejercicio7 {
     @SuppressWarnings("resource")
-    public static void main(String[] args) {
+    public static void main(String[] args){
         Scanner entrada = new Scanner(System.in);
         final int salario = 1000;
         int comision = 150, venta;
