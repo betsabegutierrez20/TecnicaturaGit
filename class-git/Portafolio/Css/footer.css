@@ -1,0 +1,97 @@
+/*Estilo  general para el footer*/
+footer{
+    background-color: #2e2d3f; /*Fondo del footer en color gris oscuro*/
+    color: #fff;/*Texto color blanco*/
+    padding: 20px 0; /*Espaciado interno arriba y abajo*/
+    text-align: center; /*Centrar el texto*/
+}
+/*Contenerdor principal del footer*/
+.footer-container {
+    max-width:  1200; /*Ancho maximo del contenedor*/
+    margin: 0 auto; /*Centar el contenedor  horizontalmente*/
+    display: flex; /*Usar flexbox para el layout*/
+    flex-direction: column; /*Colocar los elementso en una columna*/
+    align-items: center; /*Centrar los elementos horizontalmente*/
+}
+
+/* Estilo para la seccion de información del footer*/
+.footer-info {
+    margin-bottom: 10px; /*Espaciado debajo de la información*/
+}
+
+/*Estilo para la sección de enlaces a redes sociales*/
+.footer-social {
+    display: flex; /*Usar flexbok para los iconos de las redes sociales*/
+    justify-content: center; /*Centrar los iconos horizontalmente*/
+    gap: 15px; /*Espaciado entre los iconos*/
+}
+
+/*Estilo para cada enlace de red social*/
+.footer-social a {
+    display: inline-flex; /*Usar flexbox para el contenido dentro del enlace*/
+    align-items: center; /*Centrar verticalmente*/
+    justify-content: center; /*Centrar horizontalmente*/
+    width:  40px; /*Ancho de boton*/
+    height: 40px; /*Altura de boton*/
+    border-radius: 50%; /*Hacer los botomnes circulares*/
+    background-color: #555; /*Fondo del botom en color gris medio*/
+    transition: blackground-color 0.3s; /*Transición al cabiar el color de fondo*/
+}
+
+/*Estilo para los botones de redes sociales al pasar el cursor*/
+.footer-social a:hover {
+    background-color: #777; /*Cambiar el fondo a gris claro al pasar el cursor*/
+}
+
+/*Estilo para los iconos SVG dentro de los enlaces*/
+.footer-social svg {
+    width: 24px; /*Ancho del icono*/
+    height: 24px; /*Altura del icono*/
+    fill: #fff; /*Color del icono en blanco*/
+}
+
+/*Estilo responsivo  para pantallas de tamaño tablest y menores*/
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column; /*Mantener los elementos en una columna*/
+        align-items: center; /*Centrar los elementos horizontalmente*/
+    }
+    .footer-social {
+        flex-wrap: wrap; /*Permitir que los iconos se envuelvan en multimples filas si es necesario*/
+        gap: 10px; /*Espaciado entre los iconos*/
+    }
+    .footer-social a {
+        width: 35px; /*Reducir el ancho del boton*/
+        height: 35px; /*Reducir la altura del boton*/
+    }
+    .footer-social svg {
+        width: 20px; /*Reducir el ancho del icono*/
+        height: 20px; /*Reducir la altura del icono*/
+        }
+}
+
+/*Estilo responsivo para pantallas de tamaño movil*/
+@media (max-width: 480px) {
+    footer {
+        padding: 15px 0 ; /*Reducir el espaciado interno arriba y abajo*/
+    }
+
+    .footer-info {
+        margin-bottom: 5px; /*Reducir el espaciado debajo de la información*/
+        font-size: 14px; /*Reducir el tamaño de la fuente*/
+    }
+
+    .footer-social {
+        gap: 8px; /*Reducir el espaciado entre los iconos*/
+    }
+
+    .footer-social a {
+        width:  30px; /*Reducir aun mas el espaciado  del boton*/
+        height:  30px; /*Reducir aún más la altura  del boton*/
+    }
+
+    .footer-social svg {
+        width: 18px; /*Reducir aún más el ancho del icono*/
+        height: 18px; /*Reducir aún más la altura del icono*/
+    }
+}
